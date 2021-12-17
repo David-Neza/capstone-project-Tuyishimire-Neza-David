@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background-color: rgba(120, 192, 145, 0.11);
+}
+.main {
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 580px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  padding-right: 5px;
+  color: rgba(118, 114, 114, 0.85);
+  font-weight: bold;
+  font-family: "Sarabun";
+}
+li a:hover {
+  border: none;
+  background: #ff7a59;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+}
+nav,
+a {
+  text-decoration: none;
+  color: rgba(118, 114, 114, 0.85);
+}
+.contents {
+  margin-top: 50px;
+  margin-left: 250px;
+}
+.form {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+h3 {
+  color: rgb(87, 47, 47);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 200px;
+}
+p {
+  color: rgba(118, 114, 114, 0.85);
+  font-family: "Tajawal";
+  font-weight: bold;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+span,
+#signin-link {
+  color: rgba(2, 151, 198, 1);
+  text-decoration: underline;
+}
+input {
+  background-color: rgba(204, 207, 201, 0.19);
+  border: solid 0.1px rgba(43, 29, 29, 1);
+  border-radius: 7px;
+  width: 250px;
+  height: 25px;
+  color: rgba(145, 151, 139, 1);
+  font-family: "Times New Roman", Times, serif;
+}
+input:placeholder-shown {
+  font-style: italic;
+  padding-left: 10px;
+  font-size: 18px;
+}
+#cp {
+  color: rgba(118, 114, 114, 0.85);
+  font-family: "Sarabun";
+  font-size: 15px;
+  font-weight: 350;
+  margin-top: 50px;
+}
+footer {
+  margin-left: 105px;
+  display: flex;
+  margin-top: 100px;
+}
+button {
+  background-color: rgba(2, 151, 198, 1);
+  color: white;
+  font-weight: 550;
+  font-size: 8px;
+  height: 25px;
+  width: 70px;
+  border-radius: 25px;
+  border: rgba(159, 54, 54, 0);
+}
+.input-fields {
+  display: flex;
+  flex-direction: row;
+}
+textarea {
+  margin-left: 45px;
+  background-color: rgba(204, 207, 201, 0.19);
+  border-radius: 10px;
+  width: 230px;
+}
+#heading {
+  margin-top: 100px;
+  font-size: 30px;
+  color: rgba(86, 54, 53, 1);
+}

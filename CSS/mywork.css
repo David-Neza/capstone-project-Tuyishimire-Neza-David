@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+}
+.content {
+  display: flex;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 165px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+}
+.social-media,
+i {
+  margin-bottom: 20px;
+}
+.projects {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+img {
+  margin-right: 40px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(229, 229, 229, 0.14);
+  border-radius: 30px;
+  height: 530px;
+  width: 500;
+  margin-left: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.elipse {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 135.03px;
+  top: 80px;
+  margin-right: 1000px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(186, 153, 68, 0.17);
+  border-radius: 50%;
+}
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 120px;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.44);
+}
+#desc {
+  margin-left: 200px;
+  margin-top: 200px;
+}
+span {
+  color: black;
+  font-size: 30px;
+}
+button {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: rgba(190, 97, 97, 1);
+  width: 95px;
+  height: 32px;
+  border-radius: 50px;
+  margin-left: 300px;
+}
+
+nav,
+ul {
+  display: flex;
+  flex-direction: row;
+}
+nav,
+ul,
+li {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+  padding-right: 36px;
+  list-style-type: none;
+  color: rgba(0, 0, 0, 0.62);
+  font-weight: bold;
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 95px;
+}
+footer,
+p {
+  font-weight: bold;
+  font-style: sans-serif;
+}
+#ft {
+  color: black;
+  font-size: 20px;
+  color: rgba(190, 97, 97, 1);
+  color: rgba(0, 0, 0, 0.62);
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.62);
+}
+#words {
+  font-size: 20px;
+  margin-left: 200px;
+  padding-top: 50px;
+}
+span {
+  text-decoration: underline 2px solid #c66666;
+  color: rgba(0, 0, 0, 0.62);
+}
+#words2 {
+  font-size: 20px;
+  margin-left: 5px;
+  padding-top: 50px;
+}

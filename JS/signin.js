@@ -27,7 +27,7 @@ instBtn.addEventListener('click', function () {
     console.log('--------->' + email)
     signInWithEmailAndPassword(auth, document.getElementById("email").value, document.getElementById("password").value).then((userCredential) => {
         const user = userCredential.user
-        location.href = "/dash.html";
+        location.href = "/HTML-pages/dashboard.html";
     }).catch((error) => {
         console.log(error.message)
     })

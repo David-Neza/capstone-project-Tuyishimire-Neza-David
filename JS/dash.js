@@ -9,6 +9,10 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
+var d = new Date();
+var t = d.getTime();
+var counter = t;
+
 var author_name,
     title,
     article;
@@ -27,8 +31,13 @@ function readForm() {
     file = document.getElementById('files').files[0];
     console.log(author_name);
 }
+
 document.getElementById("insert").onclick = function () {
+
     readForm();
+    console.log(counter);
+    counter += 1;
+    console.log(counter);
 
     let storageRef = firebase.storage().ref('Articles');
     let file = document.getElementById('files').files[0];
@@ -45,7 +54,8 @@ document.getElementById("insert").onclick = function () {
     })
     storageRef.child(file.name).getDownloadURL().then(url => {
         console.log(url)
-        firebase.database().ref('Articles/').set({
+        firebase.database().ref('Articles/' + counter).set({
+            id: counter,
             link: url,
             name: author_name,
             title: title,
