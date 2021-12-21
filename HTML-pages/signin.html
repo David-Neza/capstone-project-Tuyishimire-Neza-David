@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <link rel="stylesheet" href="/CSS/signin.css">
-    <title>Sign in</title>
+    <title>David Neza || Sign in</title>
 </head>
 <body>
     <div class="main">
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li>Blog</li>
+                <li><a href="/HTML-pages/blog.html">Blog</a></li>
                 <li><a href="/HTML-pages/about.html">About</a></li>
                 <li><a href="/HTML-pages/signin.html">Signin</a></li>
                 <li><a href="/HTML-pages/contact.html">Contact</a></li>
@@ -26,9 +26,10 @@
         <div class="contents">
             <div class="form">
                 <h3>Sign in</h3>
-                <p>Dont have an account?<span>Sign up</span></p>
+                <p>Dont have an account?<span><a id="signin-link" href="/HTML-pages/signup.html">Sign up</a></span></p>
                 <input type="text" placeholder="E-mail" id="email"><br><br>
                 <input type="password" placeholder="Password" id="password"><br><br>
+                <p id="signin-error"></p>
                 <button id="signBtn">Sign in</button>
             </div>        
         </div>

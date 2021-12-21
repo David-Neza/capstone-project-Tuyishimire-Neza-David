@@ -7,22 +7,23 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 580px;
+  height: 750px;
 }
 nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 80px;
+  margin-right: 120px;
 }
 ul {
   list-style: none;
   display: flex;
 }
 li {
-  padding-right: 5px;
-  color: rgba(118, 114, 114, 0.85);
+  padding-right: 20px;
+  color: rgba(43, 29, 29, 1);
   font-weight: bold;
   font-family: "Sarabun";
+  font-size: 20px;
 }
 li a:hover {
   border: none;
@@ -35,16 +36,17 @@ li a:hover {
   box-sizing: border-box;
   transition: all 500ms ease;
 }
+nav,
 a {
   text-decoration: none;
-  color: rgba(118, 114, 114, 0.85);
+  color: rgba(144, 55, 55, 1);
 }
 .contents {
   margin-top: 50px;
-  margin-left: 250px;
+  margin-left: 400px;
 }
 .form {
-  margin-top: 120px;
+  margin-top: 160px;
   margin-left: 250px;
 }
 h3 {
@@ -74,13 +76,13 @@ input:placeholder-shown {
 #cp {
   color: rgba(118, 114, 114, 0.85);
   font-family: "Sarabun";
-  font-size: 15px;
-  font-weight: 350;
+  font-size: 20px;
+  font-weight: 400;
   margin-top: 50px;
 }
 footer {
-  margin-left: 500px;
-  margin-top: 30px;
+  margin-left: 630px;
+  margin-top: 150px;
   display: flex;
 }
 button {
@@ -95,4 +97,10 @@ span,
 #signin-link {
   color: rgba(2, 151, 198, 1);
   text-decoration: underline;
+}
+
+#signin-error {
+  color: white;
+  width: 300px;
+  background-color: crimson;
 }

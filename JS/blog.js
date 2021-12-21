@@ -22,7 +22,7 @@ function readArticle() {
                     </div>
                     <div class="col1">
                         <div class="blog-text">
-                            <p style="display:block">${blogValue.id}</p>
+                            <p style="display:block">${blogValue.article}</p>
                             <h2>${blogValue.title}</h2>
                             <p class="marg">${blogValue.name}</p>
                             <p class="marg" id="subj" style="display:none;">${blogValue.article}</p>

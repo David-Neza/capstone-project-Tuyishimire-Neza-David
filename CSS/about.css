@@ -7,22 +7,23 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 580px;
+  height: 740px;
 }
 nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 80px;
+  margin-right: 120px;
 }
 ul {
   list-style: none;
   display: flex;
 }
 li {
-  padding-right: 5px;
-  color: rgba(118, 114, 114, 0.85);
+  padding-right: 20px;
+  color: rgba(43, 29, 29, 1);
   font-weight: bold;
   font-family: "Sarabun";
+  font-size: 20px;
 }
 li a:hover {
   border: none;
@@ -35,10 +36,9 @@ li a:hover {
   box-sizing: border-box;
   transition: all 500ms ease;
 }
-nav,
 a {
   text-decoration: none;
-  color: rgba(118, 114, 114, 0.85);
+  color: rgba(144, 55, 55, 1);
 }
 .contents {
   margin-top: 50px;
@@ -48,7 +48,7 @@ a {
 #myProgress {
   width: 20%;
   height: 16px;
-  background-color: rgba(120, 192, 145, 0.11);
+  background-color: rgba(145, 151, 139, 1);
   margin-top: 20px;
 }
 
@@ -64,11 +64,50 @@ a {
 p {
   margin-right: 25px;
 }
+#myProgress-css {
+  width: 20%;
+  height: 16px;
+  background-color: rgba(145, 151, 139, 1);
+  margin-top: 20px;
+}
+
+#myBar-css {
+  width: 70%;
+  height: 15px;
+  background-color: rgba(219, 64, 16, 1);
+}
+.css {
+  display: flex;
+}
+.html,
+p {
+  margin-right: 50px;
+}
+#myProgress-js {
+  width: 20%;
+  height: 16px;
+  background-color: rgba(145, 151, 139, 1);
+  margin-top: 20px;
+}
+
+#myBar-js {
+  width: 45%;
+  height: 15px;
+  background-color: rgba(219, 64, 16, 1);
+}
+.js {
+  display: flex;
+}
+.html,
+p {
+  margin-right: 50px;
+}
+
 h3 {
   color: rgb(87, 47, 47);
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 200px;
 }
 p {
@@ -83,54 +122,21 @@ span,
   color: rgba(2, 151, 198, 1);
   text-decoration: underline;
 }
-input {
-  background-color: rgba(204, 207, 201, 0.19);
-  border: solid 0.1px rgba(43, 29, 29, 1);
-  border-radius: 7px;
-  width: 250px;
-  height: 25px;
-  color: rgba(145, 151, 139, 1);
-  font-family: "Times New Roman", Times, serif;
-}
-input:placeholder-shown {
-  font-style: italic;
-  padding-left: 10px;
-  font-size: 18px;
+#heading {
+  margin-left: 330px;
+  margin-top: 100px;
+  font-size: 50px;
+  color: rgba(86, 54, 53, 1);
+  font-family: "Ubuntu Mono";
 }
 #cp {
   color: rgba(118, 114, 114, 0.85);
   font-family: "Sarabun";
-  font-size: 15px;
-  font-weight: 350;
-  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
 }
 footer {
-  margin-left: 105px;
+  margin-top: 130px;
   display: flex;
-  margin-top: 100px;
-}
-button {
-  background-color: rgba(2, 151, 198, 1);
-  color: white;
-  font-weight: 550;
-  font-size: 8px;
-  height: 25px;
-  width: 70px;
-  border-radius: 25px;
-  border: rgba(159, 54, 54, 0);
-}
-.input-fields {
-  display: flex;
-  flex-direction: row;
-}
-textarea {
-  margin-left: 45px;
-  background-color: rgba(204, 207, 201, 0.19);
-  border-radius: 10px;
-  width: 230px;
-}
-#heading {
-  margin-top: 100px;
-  font-size: 30px;
-  color: rgba(86, 54, 53, 1);
 }

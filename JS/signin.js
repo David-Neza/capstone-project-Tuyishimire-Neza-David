@@ -21,6 +21,9 @@ const db = getDatabase();
 var password = document.getElementById("password").value;
 var email = document.getElementById("email").value;
 
+function validaton() {
+
+}
 const auth = getAuth()
 var instBtn = document.getElementById("signBtn")
 instBtn.addEventListener('click', function () {
@@ -30,5 +33,7 @@ instBtn.addEventListener('click', function () {
         location.href = "/HTML-pages/dashboard.html";
     }).catch((error) => {
         console.log(error.message)
+        document.getElementById('signin-error').innerHTML = 'incorrect email or password'
+        document.getElementById('cp').style.marginTop = '10px'
     })
 });

@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
-import { storage } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-storage.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -28,10 +27,8 @@ const db = getDatabase();
 
 
 
-var name = document.getElementById("name").value;
-var email = document.getElementById("email").value;
-var phone = document.getElementById("phone").value;
-var password = document.getElementById("password").value;
+
+
 
 const auth = getAuth()
 
@@ -45,130 +42,123 @@ var updBtn = document.getElementById("updbtn");
 
 var delBtn = document.getElementById("delbtn");
 
-
-function nameValidation(name) {
-    if (/^[a-zA-Z]+ [a-zA-Z]+$/.test(name) && (name != 0)) {
-        return true;
-    } else {
-        if (!(/^[a-zA-Z]+ [a-zA-Z]+$/.test(name))) {
-
-            //Show name is not valid
-            document.querySelector('.name_error').style.display = 'block';
-            //Hide error after 5 seconds
-            setTimeout(() => {
-                document.querySelector('.name_error').style.display = 'none';
-            }, 5000);
-        } else {
-            console.log("field is empty");
-            //Show name is required error
-            document.querySelector('.namempty_error').style.display = 'block';
-            //Hide error after 5 seconds
-            setTimeout(() => {
-                document.querySelector('.namempty_error').style.display = 'none';
-            }, 5000);
-        }
-    }
-    return false;
-}
-function validation() {
-    nameValidation(name);
-}
-
-
-//-----------insert data function
-
-function InsertData() {
-    if (validation()) {
-        set(ref(db, "Users/" + Rollbox.value), {
-            Name: name,
-            Phone: phone,
-            Email: email,
-            Password: password,
-
-
-        })
-        //Show alert
-        document.querySelector('.alert').style.display = 'block';
-        //Hide alert after 5 seconds
-        setTimeout(() => {
-            document.querySelector('.alert').style.display = 'none';
-        }, 10000);
-    }
-    else {
-        alert('verify all fields');
-    }
-}
-
-
-
-
-//Selecting data --viewing
-
-function SelectData() {
-    const dbref = ref(db);
-
-    get(child(dbref, "TheStudents/" + Rollbox.value)).then((snapshot) => {
-        if (snapshot.exists()) {
-            Namebox.value = snapshot.val().NameOfStd;
-            Secbox.value = snapshot.val().Section;
-            Genbox.value = snapshot.val().Gender;
-        }
-        else {
-            alert("No data found");
-        }
-    })
-        .catch((error) => {
-            alert("unsuccessful, error" + error);
-        });
-}
-
-//Update
-
-function updateData() {
-    update(ref(db, "TheStudents/" + Rollbox.value), {
-        NameOfStd: Namebox.value,
-        Section: Secbox.value,
-        Gender: Genbox.value,
-    })
-        .then(() => {
-            alert('data updated successfully!');
-        })
-        .catch((error) => {
-            alert("unsuccessful",
-                +error);
-        });
-}
-
-//Delete 
-
-function deleteData() {
-    remove(ref(db, "TheStudents/" + Rollbox.value))
-        .then(() => {
-            alert('data deleted successfully!');
-        })
-        .catch((error) => {
-            alert("unsuccessful",
-                +error);
-        });
-}
-
-
 instBtn.addEventListener('click', function () {
 
-    console.log(auth)
-    console.log(document.getElementById("name").value)
-    console.log(document.getElementById("email").value)
-    createUserWithEmailAndPassword(auth, document.getElementById("email").value, document.getElementById("password").value).then((userCredential) => {
-        const user = userCredential.user
-        set(ref(db, "Users/" + user.uid), {
-            Name: document.getElementById("name").value,
-            Phone: document.getElementById("phone").value,
-            Email: document.getElementById("email").value,
-            Password: document.getElementById("password").value
+    const name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var password = document.getElementById("password").value;
+
+    const user = {
+        name: name,
+        email: email,
+        phone: phone,
+        password: password
+    }
+
+    function validate(user) {
+        var check = 0;
+        var isFieldVar = null;
+        console.log(document.getElementById('name').value)
+        console.log(name)
+        const errors = {
+            name: '',
+            email: '',
+            phone: '',
+            password: ''
+        }
+        if (!(/^[A-Za-z]+$/).test(user.name)) {
+            console.log((/^[A-Za-z]+$/).test(user.name))
+            check++;
+            errors.name = 'Enter a valid name';
+        }
+        if (user.name.length == 0) {
+            check++;
+            console.log(user.name.length)
+            errors.name = 'Name cannot be empty'
+        }
+        if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(user.email))) {
+            check++;
+            errors.email = 'Enter a valid email'
+        }
+        if (user.email.length == 0) {
+            check++;
+            errors.email = 'Email cannot empty';
+        }
+        if (!(/^\d{10}$/).test(user.phone)) {
+            console.log(phone)
+            check++;
+            errors.phone = 'Enter a valid phone number'
+        }
+        if (user.phone.length != 10) {
+            errors.phone = 'Phone must be 10 digits'
+        }
+        if (!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/).test(user.password)) {
+            check++;
+            errors.password = "password must be \n a minimum of 1 lower case letter [a-z] and \n a minimum of 1 upper case letter [A-Z] and\n a minimum of 1 numeric character [0-9] and\n a minimum of 1 special character: ~`!@#$%^&*()-_+={}[]|\;:<>,./?"
+        }
+        if (user.phone.length == 0) {
+            errors.phone = 'Phone cannot be empty'
+        }
+        if (check == 0) {
+            isFieldVar = true;
+        }
+        else {
+            isFieldVar = false;
+        }
+        return { isFieldVar, errors }
+    }
+
+
+    var checkValidity = validate(user);
+    if (checkValidity.isFieldVar) {
+        console.log(auth)
+        console.log(document.getElementById("name").value)
+        console.log(document.getElementById("email").value)
+        createUserWithEmailAndPassword(auth, document.getElementById("email").value, document.getElementById("password").value).then((userCredential) => {
+            const user = userCredential.user
+            set(ref(db, "Users/" + user.uid), {
+                Name: document.getElementById("name").value,
+                Phone: document.getElementById("phone").value,
+                Email: document.getElementById("email").value,
+                Password: document.getElementById("password").value
+            })
+            document.getElementById('signup-success').innerHTML = `Thank you ${name} for creating an account`
+            document.getElementById('ft').style.marginTop = '10px';
+        }).catch((error) => {
+            console.log(error.message)
         })
-    }).catch((error) => {
-        console.log(error.message)
-    })
+    } else {
+        var getErrors = checkValidity.errors;
+        if (getErrors.name != '') {
+            var nameError = document.getElementById('name-errors')
+            nameError.innerHTML = getErrors.name
+            nameError.style.color = 'white'
+        }
+        if (getErrors.phone != '') {
+            console.log('this is aphone error')
+            var phoneError = document.getElementById('phone-errors')
+            phoneError.innerHTML = getErrors.phone;
+            phoneError.style.color = 'white';
+        }
+        if (getErrors.email != '') {
+            console.log('this is aphone error')
+            var emailError = document.getElementById('email-errors')
+            emailError.innerHTML = getErrors.email;
+            emailError.style.color = 'white';
+        }
+        if (getErrors.password != '') {
+            console.log('this is a password')
+            function display() {
+                var passwordError = document.getElementById('password-errors')
+                passwordError.innerHTML = getErrors.password;
+                passwordError.style.color = 'white';
+            }
+            setTimeout(display, 5000);
+        }
+    }
+
+
 });
        //selbtn.addEventListener('click', SelectData);
        //updbtn.addEventListener('click', updateData);

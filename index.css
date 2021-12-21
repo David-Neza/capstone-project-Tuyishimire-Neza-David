@@ -7,22 +7,23 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 580px;
+  height: 740px;
 }
 nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 80px;
+  margin-right: 120px;
 }
 ul {
   list-style: none;
   display: flex;
 }
 li {
-  padding-right: 5px;
-  color: rgba(118, 114, 114, 0.85);
+  padding-right: 20px;
+  color: rgba(43, 29, 29, 1);
   font-weight: bold;
   font-family: "Sarabun";
+  font-size: 20px;
 }
 li a:hover {
   border: none;
@@ -37,7 +38,7 @@ li a:hover {
 }
 a {
   text-decoration: none;
-  color: rgba(118, 114, 114, 0.85);
+  color: rgba(144, 55, 55, 1);
 }
 .contents {
   display: flex;
@@ -45,24 +46,24 @@ a {
   margin-left: 250px;
 }
 .profile {
-  margin-left: 350px;
+  margin-left: 230px;
+  margin-top: 80px;
 }
-
-.profile,
-img.rounded-corners {
-  border-radius: 100px;
+img {
+  border-radius: 30px;
 }
 p {
   color: rgba(144, 55, 55, 1);
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 20px;
 }
 p,
 span {
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 40px;
   margin-top: 100px;
+  word-spacing: 10px;
 }
 #name {
   color: rgba(43, 29, 29, 1);
@@ -71,7 +72,7 @@ button {
   background-color: rgba(190, 97, 97, 1);
   border: none;
   border-radius: 20px;
-  color: white;
+  color: color;
   font-family: "Times New Roman", Times, serif;
   height: 35px;
   width: 90px;
@@ -79,19 +80,17 @@ button {
 #cp {
   color: rgba(118, 114, 114, 0.85);
   font-family: "Sarabun";
-  font-size: 15px;
-  font-weight: 350;
+  font-size: 20px;
+  font-weight: 400;
   margin-top: 50px;
+  margin-left: 60px;
 }
 footer {
-  margin-left: 240px;
-  margin-top: 80px;
+  margin-left: 200px;
+  margin-top: 20px;
   display: flex;
 }
-#socio {
-  padding-left: 300px;
-  font-family: "Sarabun";
-  font-size: 15px;
-  font-weight: 350;
-  margin-bottom: 100px;
+.description {
+  margin-top: 120px;
+  margin-left: 5px;
 }

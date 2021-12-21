@@ -7,22 +7,23 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 580px;
+  height: 750px;
 }
 nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 80px;
+  margin-right: 120px;
 }
 ul {
   list-style: none;
   display: flex;
 }
 li {
-  padding-right: 5px;
-  color: rgba(118, 114, 114, 0.85);
+  padding-right: 20px;
+  color: rgba(43, 29, 29, 1);
   font-weight: bold;
   font-family: "Sarabun";
+  font-size: 20px;
 }
 li a:hover {
   border: none;
@@ -35,14 +36,13 @@ li a:hover {
   box-sizing: border-box;
   transition: all 500ms ease;
 }
-nav,
 a {
   text-decoration: none;
-  color: rgba(118, 114, 114, 0.85);
+  color: rgba(144, 55, 55, 1);
 }
 .contents {
-  margin-top: 50px;
-  margin-left: 250px;
+  margin-top: 60px;
+  margin-left: 420px;
 }
 .form {
   margin-top: 50px;
@@ -54,9 +54,11 @@ h3 {
   font-weight: bold;
   font-size: 50px;
   margin-left: 200px;
+  margin-top: 80px;
 }
+
 p {
-  color: rgba(118, 114, 114, 0.85);
+  color: rgb(87, 47, 47);
   font-family: "Tajawal";
   font-weight: bold;
   margin-left: 200px;
@@ -84,13 +86,13 @@ input:placeholder-shown {
 #cp {
   color: rgba(118, 114, 114, 0.85);
   font-family: "Sarabun";
-  font-size: 15px;
-  font-weight: 350;
+  font-size: 20px;
+  font-weight: 400;
   margin-top: 50px;
 }
 footer {
-  margin-left: 105px;
-  margin-top: 30px;
+  margin-left: 250px;
+  margin-top: 120px;
   display: flex;
 }
 button {
@@ -100,4 +102,35 @@ button {
   width: 100px;
   border-radius: 25px;
   border: rgba(159, 54, 54, 0);
+}
+#signup-success {
+  color: white;
+  background-color: crimson;
+  padding-left: 50px;
+  width: 300px;
+}
+#name-errors {
+  margin-left: 5px;
+  color: white;
+  background-color: crimson;
+  width: 250px;
+}
+#phone-errors {
+  margin-left: 5px;
+  color: white;
+  background-color: crimson;
+  width: 250px;
+}
+#email-errors {
+  margin-left: 5px;
+  color: white;
+  background-color: crimson;
+  width: 250px;
+}
+#password-errors {
+  margin-left: 5px;
+  color: white;
+  background-color: crimson;
+  width: 250px;
+  margin-left: 650px;
 }

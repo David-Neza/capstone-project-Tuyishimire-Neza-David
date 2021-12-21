@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <link rel="stylesheet" href="/CSS/signup.css">
-    <title>Sign Up</title>
+    <title>David Neza || Sign Up</title>
 </head>
 <body>
     <div class="main">
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li>Blog</li>
+                <li><a href="/HTML-pages/blog.html">Blog</a></li>
                 <li><a href="/HTML-pages/about.html">About</a></li>
                 <li><a href="/HTML-pages/signin.html">Signin</a></li>
                 <li><a href="/HTML-pages/contact.html">Contact</a></li>
@@ -26,14 +26,20 @@
         <div class="contents">
             <div class="form">
                 <h3>Sign Up</h3>
+                <p id="signup-success"></p>
                 <p>Already have an Account?<span><a id="signin-link" href="/HTML-pages/signin.html">Sign In</a></span></p>
-                <input id="name" placeholder="Name" type="text" required>  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </input><input id="phone" placeholder="phone" type="text" required></input><br><br> 
-                <input id="email" placeholder="E-mail" type="text" required></input>  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                <input id="password" placeholder="Password" type="text" required></input><br><br>
+                <input id="name" placeholder="Name" type="text">  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <input id="phone" placeholder="phone" type="text" required>
+                <p id="name-errors"></p> 
+                <p id="phone-errors"></p>
+                <input id="email" placeholder="E-mail" type="text" required> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <input id="password" placeholder="Password" type="password" required><br><br>
+                <p id="email-errors"></p>
+                <p id="password-errors"></p>
                 <button id="insbtn">Sign Up</button>            
             </div>        
         </div>
-        <footer><p id="cp">copyright @David 2021. All rights reserved<span id="socio"></span></footer>
+        <footer id="ft"><p id="cp">copyright @David 2021. All rights reserved<span id="socio"></span></footer>
     </div>   
     <script type="module" src="/JS/signup.js"></script> 
 </body>
