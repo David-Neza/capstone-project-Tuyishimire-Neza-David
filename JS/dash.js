@@ -49,6 +49,7 @@ document.getElementById("insert").onclick = function () {
         console.log('upload success');
         console.log(thisRef);
         alert("upload success");
+        location.href = "/HTML-pages/blog.html"
     }).catch(e => {
         console.log('Error' + e);
     })

@@ -7,7 +7,7 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 580px;
+  height: 750px;
 }
 nav {
   display: flex;
@@ -41,8 +41,8 @@ a {
   color: rgba(144, 55, 55, 1);
 }
 .contents {
-  margin-top: 50px;
-  margin-left: 250px;
+  margin-top: 10px;
+  margin-left: 200px;
 }
 .form {
   margin-top: 50px;
@@ -56,9 +56,9 @@ h3 {
   margin-left: 200px;
 }
 p {
-  color: rgba(118, 114, 114, 0.85);
+  color: black;
   font-family: "Tajawal";
-  font-weight: bold;
+  font-weight: 500;
   margin-left: 200px;
   margin-bottom: 50px;
 }
@@ -119,13 +119,8 @@ textarea {
   color: rgba(86, 54, 53, 1);
 }
 
-#cardSection {
-  height: 600px;
-  width: 600px;
-  background-color: #ff7a59;
-}
 #cardSection,
 img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }

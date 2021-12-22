@@ -7,7 +7,7 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 740px;
+  height: 580px;
 }
 nav {
   display: flex;
@@ -41,8 +41,8 @@ a {
   color: rgba(144, 55, 55, 1);
 }
 .contents {
-  margin-top: 200px;
-  margin-left: 450px;
+  margin-top: 100px;
+  margin-left: 250px;
 }
 .form {
   margin-top: 100px;
@@ -91,7 +91,7 @@ input:placeholder-shown {
 footer {
   margin-left: 320px;
   display: flex;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 button {
   background-color: rgba(2, 151, 198, 1);

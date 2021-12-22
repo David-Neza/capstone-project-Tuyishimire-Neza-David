@@ -7,7 +7,7 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 740px;
+  height: 580px;
 }
 nav {
   display: flex;
@@ -46,24 +46,28 @@ a {
   margin-left: 250px;
 }
 .profile {
-  margin-left: 230px;
-  margin-top: 80px;
+  margin-left: 150px;
+  margin-top: 10px;
 }
 img {
+  border-radius: 30px;
+  width: 350px;
+  height: 350px;
   border-radius: 30px;
 }
 p {
   color: rgba(144, 55, 55, 1);
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 p,
 span {
   font-family: "Roboto";
-  font-size: 40px;
-  margin-top: 100px;
-  word-spacing: 10px;
+  font-size: 25px;
+  margin-top: 120px;
+  word-spacing: 5px;
+  margin-right: 50px;
 }
 #name {
   color: rgba(43, 29, 29, 1);
@@ -91,6 +95,184 @@ footer {
   display: flex;
 }
 .description {
-  margin-top: 120px;
-  margin-left: 5px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1075px) {
+  nav {
+    margin-right: 100px;
+  }
+  .profile {
+    margin-right: 100px;
+    margin-top: 80px;
+  }
+  img {
+    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+  }
+  .profile {
+    margin-left: 80px;
+  }
+  p,
+  span {
+    font-size: 20px;
+    margin-top: 120px;
+    word-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  p,
+  span {
+    font-size: 15px;
+    margin-top: 120px;
+    margin-right: 20px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  p,
+  span {
+    font-size: 15px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 965px) {
+  p,
+  span {
+    font-size: 15px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 1021px) {
+  p,
+  span {
+    font-size: 15px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 917px) {
+  p,
+  span {
+    font-size: 15px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 1013px) {
+  p,
+  span {
+    font-size: 15px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 955px) {
+  p,
+  span {
+    font-size: 15px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 865px) {
+  p,
+  span {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 745px) {
+  p,
+  span {
+    font-size: 10px;
+    word-spacing: normal;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 681px) {
+  p,
+  span {
+    font-size: 5px;
+    word-spacing: normal;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile {
+    margin-left: 50px;
+  }
+  .contents {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 679px) {
+  p,
+  span {
+    font-size: 10px;
+    word-spacing: normal;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile {
+    margin-left: 50px;
+  }
+  .contents {
+    margin-left: 100px;
+  }
+  #cp {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  nav {
+    margin-left: 150px;
+    font-size: 15px;
+  }
+  li {
+    font-size: 15px;
+  }
+  footer {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 499xpx) {
+  nav {
+    margin-right: 50px;
+  }
+  li {
+    font-size: 5px;
+  }
 }

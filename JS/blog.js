@@ -16,20 +16,18 @@ function readArticle() {
         document.getElementById("cardSection").innerHTML += `
         <ul id=list>
             <li id="list-item">
-                <div class="col">
-                    <div class="col1">
-                        <img src="${blogValue.link}" class="img" alt="blog">
-                    </div>
-                    <div class="col1">
-                        <div class="blog-text">
-                            <p style="display:block">${blogValue.article}</p>
-                            <h2>${blogValue.title}</h2>
-                            <p class="marg">${blogValue.name}</p>
-                            <p class="marg" id="subj" style="display:none;">${blogValue.article}</p>
-                            <button type="submit" onclick="DeleteBlog(${blogValue.id})" style="background-color:red;">Delete</button>
-                        </div>
-                    </div>
-                </div>
+                    <div style="background:rgba(255, 230, 4, 0.49); height:300px; width:800px; display:flex; border:2px solid #000033" >    
+                        <div style="display:flex;" class="image&title">
+                            <img src="${blogValue.link}"> 
+                            <div class="article-content">
+                                <h2 style="margin-left:100px">${blogValue.title}</h2>
+                                <p  style="margin-left:10px; color:#000033;font-weight:bold">By ${blogValue.name}</p>
+                               <p style="margin-left:10px;">${blogValue.article}</p>
+                               <button type="submit" onclick="DeleteBlog(${blogValue.id})" style="height:35px; font-size:15px;margin-left:10px;">Delete</button>
+                                <button><a href="/HTML-pages/contact.html">Comment</a></button>
+                            </div>                         
+                        </div>    
+                    </div><br>
             </li>
         </ul>
         `

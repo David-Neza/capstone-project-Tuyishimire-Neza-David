@@ -8,10 +8,10 @@
     <link href="https://pagecdn.io/lib/easyfonts/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
-    <link rel="stylesheet" href="/CSS/blog.css">
-    <title>David Neza || Blog</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <title>David Neza || Leave a Comment</title>
 </head>
-<body onload="readArticle() ">
+<body>
     <div class="main">
         <nav>
             <ul>
@@ -23,16 +23,21 @@
             </ul>
         </nav>
         <div class="contents">
-                <p id="heading">Read Articles from our many Authors</p>
-                <div class="row cent" id="cardSection">
-
-                </div>           
+            <div class="form">
+                <p id="heading">Leave a comment</p>
+                <p id="message-success"></p>
+                <div class="input-fields">
+                    <div class="users-data">
+                        <input id="name" placeholder="Name" type="text" > <br><br><br>
+                        <input id="email" placeholder="E-mail" type="text"></input>              
+                    </div>
+                        <textarea placeholder="Leave a comment" id="message"></textarea>   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br><br><br>
+                </div>
+             <br><button id="insbtn">Send</button>            
+            </div>        
         </div>
-        <footer><p id="cp">copyright @David 2021. All rights reserved<span id="socio"></span></footer>
+        <footer id="ft"><p id="cp">copyright @David 2021. All rights reserved<span id="socio"></span></footer>
     </div>   
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-    <script src="/JS/blog.js"></script> 
+    <script type="module" src="/JS/comment.js"></script> 
 </body>
 </html>
