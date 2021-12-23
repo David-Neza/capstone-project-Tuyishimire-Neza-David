@@ -163,6 +163,7 @@ instBtn.addEventListener('click', function () {
             Message: document.getElementById("message").value
         })
         document.getElementById('message-success').innerHTML = `Thank you for your feedback ${name}`
+
         document.getElementById('ft').style.marginTop = '10px';
         //alert(`Thank you ${name} for your feedback`)
     }).catch((error) => {

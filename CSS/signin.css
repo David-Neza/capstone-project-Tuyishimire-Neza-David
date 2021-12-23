@@ -7,7 +7,7 @@ body {
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  height: 750px;
+  height: 580px;
 }
 nav {
   display: flex;
@@ -43,7 +43,7 @@ a {
 }
 .contents {
   margin-top: 50px;
-  margin-left: 400px;
+  margin-left: 250px;
 }
 .form {
   margin-top: 160px;
@@ -76,13 +76,13 @@ input:placeholder-shown {
 #cp {
   color: rgba(118, 114, 114, 0.85);
   font-family: "Sarabun";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 footer {
-  margin-left: 630px;
-  margin-top: 150px;
+  margin-left: 500px;
+  margin-top: 20px;
   display: flex;
 }
 button {
@@ -104,3 +104,4 @@ span,
   width: 300px;
   background-color: crimson;
 }
+

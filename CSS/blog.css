@@ -4,10 +4,10 @@ body {
 }
 .main {
   background-color: white;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-left: 40px;
   margin-right: 40px;
-  height: 750px;
+  /* height: 750px; */
 }
 nav {
   display: flex;
@@ -42,7 +42,11 @@ a {
 }
 .contents {
   margin-top: 10px;
-  margin-left: 200px;
+  /* margin-left: 200px; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: block;
 }
 .form {
   margin-top: 50px;
@@ -59,8 +63,6 @@ p {
   color: black;
   font-family: "Tajawal";
   font-weight: 500;
-  margin-left: 200px;
-  margin-bottom: 50px;
 }
 span,
 #signin-link {
@@ -86,12 +88,15 @@ input:placeholder-shown {
   font-family: "Sarabun";
   font-size: 15px;
   font-weight: 350;
-  margin-top: 50px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
 }
 footer {
-  margin-left: 105px;
+  width: 100%;
+  text-align: center;
   display: flex;
-  margin-top: 100px;
 }
 button {
   background-color: rgba(2, 151, 198, 1);
@@ -114,13 +119,20 @@ textarea {
   width: 230px;
 }
 #heading {
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin-left: 0;
+  text-align: center;
   font-size: 30px;
   color: rgba(86, 54, 53, 1);
 }
 
 #cardSection,
 img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+}
+#cardSection {
+  width: 85%;
+  margin: auto;
+  height: 100vh;
 }

@@ -84,7 +84,7 @@ button {
 #cp {
   color: rgba(118, 114, 114, 0.85);
   font-family: "Sarabun";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   margin-top: 50px;
   margin-left: 60px;
@@ -95,7 +95,7 @@ footer {
   display: flex;
 }
 .description {
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 @media only screen and (max-width: 1075px) {
